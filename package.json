@@ -1,0 +1,33 @@
+{
+  "name": "hee-animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/GoodEvent/heeAnimation.git"
+  },
+  "keywords": [
+    "animation"
+  ],
+  "author": "GoodEvent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GoodEvent/heeAnimation/issues"
+  },
+  "homepage": "https://github.com/GoodEvent/heeAnimation#readme",
+  "dependencies": {
+    "@types/jasmine": "^3.6.0",
+    "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "jasmine-core": "^3.6.0",
+    "karma": "^5.2.3",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^4.0.1",
+    "karma-typescript": "^5.2.0"
+  }
+}
