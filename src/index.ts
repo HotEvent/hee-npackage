@@ -15,4 +15,4 @@ class HeeAnimation {
 }
 
 const heeAnimation = new HeeAnimation(document.body);
-export {heeAnimation};
+excport default heeAnimation;
