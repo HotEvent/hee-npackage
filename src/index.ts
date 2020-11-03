@@ -14,7 +14,7 @@ class HeeAnimation {
     }
 }
 
-const heeAnimation = new HeeAnimation(document.body);
-export function aa(){
+// const heeAnimation = new HeeAnimation(document.body);
+export function heeAnimation(){
     console.log('aa');
 };
