@@ -1,4 +1,7 @@
+import { Subject } from "rxjs";
+
 export class HeeAnimation {
+    sb = new Subject();
     constructor(private element: HTMLElement) {
 
     }
