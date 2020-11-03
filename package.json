@@ -1,8 +1,8 @@
 {
   "name": "hee-animation",
-  "version": "1.0.0",
+  "version": "1.0.3-apla",
   "description": "",
-  "main": "index.js",
+  "main": "dist/hee-animation.js",
   "scripts": {
     "test": "karma start",
     "build": "webpack --config webpack.config.js"
@@ -14,6 +14,7 @@
   "keywords": [
     "animation"
   ],
+  "module": "src/index.ts",
   "author": "GoodEvent",
   "license": "MIT",
   "bugs": {

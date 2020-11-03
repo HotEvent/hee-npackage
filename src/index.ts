@@ -1,7 +1,5 @@
-import { Subject } from "rxjs";
+class HeeAnimation {
 
-export class HeeAnimation {
-    sb = new Subject();
     constructor(private element: HTMLElement) {
 
     }
@@ -15,3 +13,6 @@ export class HeeAnimation {
 
     }
 }
+
+const heeAnimation = new HeeAnimation(document.body);
+export {heeAnimation};

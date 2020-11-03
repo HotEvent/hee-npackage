@@ -1,4 +1,4 @@
-import { HeeAnimation } from ".";
+// import { HeeAnimation } from ".";
 
 describe("Base", () => {
 
@@ -7,11 +7,11 @@ describe("Base", () => {
     //     heeAnimation.addStyle('');
     //     expect(document.querySelector('style').innerHTML).toEqual("");
     // });
-    it("should to be 'text/css'", () => {
-        const heeAnimation = new HeeAnimation(document.body);
-        heeAnimation.addStyle(`body{background:red}`);
-        expect(document.querySelector('style').getAttribute('type')).toEqual("text/css");
-    });
+    // it("should to be 'text/css'", () => {
+    //     const heeAnimation = new HeeAnimation(document.body);
+    //     heeAnimation.addStyle(`body{background:red}`);
+    //     expect(document.querySelector('style').getAttribute('type')).toEqual("text/css");
+    // });
     // it("should to be 'animation'", () => {
     //     const heeAnimation = new HeeAnimation(document.body);
     //     expect(document.querySelector('style').innerHTML).toEqual("");

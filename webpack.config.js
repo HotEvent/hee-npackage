@@ -4,8 +4,10 @@ module.exports = {
     mode: "production",
     entry: './src/index.ts',
     output: {
-        filename: 'hee-animation.min.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'hee-animation.js',
+        library: 'heeAnimation',
+        libraryTarget: 'umd'
     },
     resolve: {
         // Add `.ts` and `.tsx` as a resolvable extension.
@@ -22,7 +24,7 @@ module.exports = {
             commonjs: 'rxjs',
             commonjs2: 'rxjs',
             amd: 'rxjs',
-            root: '_'
+            root: 'Rx'
         }
     }
 };
