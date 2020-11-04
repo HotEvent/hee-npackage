@@ -1,6 +1,6 @@
 {
   "name": "hee-animation",
-  "version": "1.0.9-apla",
+  "version": "1.0.10-apla",
   "description": "",
   "main": "dist/hee-animation.js",
   "typings": "dist/index.d.ts",
