@@ -1,4 +1,5 @@
 const path = require('path');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
     mode: "production",
@@ -19,6 +20,9 @@ module.exports = {
             { test: /\.tsx?$/, loader: "ts-loader" }
         ]
     },
+    plugins:[
+        new CleanWebpackPlugin()
+    ],
     externals: {
         rxjs: {
             commonjs: 'rxjs',
