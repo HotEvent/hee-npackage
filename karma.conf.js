@@ -5,7 +5,7 @@ module.exports = function (config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: './src',
 
 
     // frameworks to use
@@ -15,7 +15,7 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      "src/**/*.ts" // *.tsx for React Jsx
+      "**/*.ts" // *.tsx for React Jsx
     ],
 
 
@@ -34,7 +34,7 @@ module.exports = function (config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress','karma-typescript'],
+    reporters: ['progress', 'karma-typescript'],
 
 
     // web server port
@@ -65,6 +65,11 @@ module.exports = function (config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
+    concurrency: Infinity,
+    karmaTypescriptConfig: {
+      "compilerOptions": {
+        "skipLibCheck": true
+      }
+    },
   })
 }

@@ -1,20 +1,22 @@
-class HeeAnimation {
+let oAddEventListener = document.addEventListener;
 
-    constructor(private element: HTMLElement) {
-
-    }
-    addStyle(styleString: string) {
-        let styleElement = document.createElement("style");
-        styleElement.setAttribute('type', 'text/css');
-        styleElement.innerHTML = styleString;
-        document.body.appendChild(styleElement);
-    }
-    fadeIn(config: { time: string, from: string, to: string }) {
-
+class FooComponent {
+    search() {
+        console.log('search');
     }
 }
 
-// const heeAnimation = new HeeAnimation(document.body);
-export function heeAnimation(){
-    console.log('aa');
+const fooComponent = new FooComponent();
+
+const compiledComponent = { component: fooComponent };
+
+
+
+document.addEventListener = (type: string, listener) => {
+    let newListener = (ev) => {
+        console.log('before');
+        listener(ev);
+        console.log('after');
+    };
+    oAddEventListener(type, newListener);
 };

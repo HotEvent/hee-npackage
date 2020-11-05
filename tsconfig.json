@@ -4,5 +4,5 @@
         "outDir": "./dist",
         
     },
-    "exclude": ["**/**.spec.ts","dist"]
+    "exclude": ["**/**.spec.ts","dist","webpack.config.js"],
 }
