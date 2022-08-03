@@ -1,6 +1,3 @@
-// Karma configuration
-// Generated on Mon Nov 02 2020 19:18:42 GMT+0800 (中国标准时间)
-
 module.exports = function (config) {
   config.set({
 
@@ -68,7 +65,8 @@ module.exports = function (config) {
     concurrency: Infinity,
     karmaTypescriptConfig: {
       "compilerOptions": {
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "target": "ESNext"
       }
     },
   })
